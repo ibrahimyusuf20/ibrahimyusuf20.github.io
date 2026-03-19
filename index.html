@@ -2,100 +2,27 @@
 <html lang="bg">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IBRAHIM YUSUF</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #cd853f;
-    }
-    header {
-      background: #cd853f;
-      color: #fff;
-      padding: 40px 0;
-      text-align: center;
-    }
-    nav {
-      background: #555;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-    }
-    nav a {
-      color: #fff;
-      padding: 15px 20px;
-      text-decoration: none;
-    }
-    nav a:hover {
-      background: #333;
-    }
-    section {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-      background: #fff;
-      margin-bottom: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #333;
-      color: #fff;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>IBRAHIM YUSUF</h1>
-  <p>Software Engineering student at Burgas Free University.</p>
-</header>
+  <!-- Header -->
+  <header>
+    <h1>MiniInstagram</h1>
+  </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <!-- Create Post -->
+  <section class="create-post">
+    <input type="text" id="username" placeholder="Your name">
+    <input type="text" id="imageUrl" placeholder="Image URL">
+    <input type="text" id="caption" placeholder="Caption">
+    <button onclick="addPost()">Post</button>
+  </section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    Write a short introduction about yourself here. Who you are, what you do,
-    and what you're interested in.
-  </p>
-</section>
+  <!-- Feed -->
+  <section id="feed"></section>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>Skill 1</li>
-    <li>Skill 2</li>
-    <li>Skill 3</li>
-  </ul>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-  <p>Here are some of my projects:</p>
-  <ul>
-    <li>test1</li>
-    <li>Project 2 – short description</li>
-    <li>Project 3 – short description</li>
-  </ul>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: ibrahimyusuf28072005@email.com</p>
-  <p>Instagram:_ibrahimyusuf_</p>
-</section>
-
-<footer>
-  <p>© 2026 IBRAHIM YUSUF</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
